@@ -1,0 +1,296 @@
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Thu May 25 13:04:37 2023
+# Process ID: 22308
+# Current directory: D:/facultate/An1Sem2/DSD/vivado_projects/Timer_v2/Timer_v2.runs/synth_1
+# Command line: vivado.exe -log Timer.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Timer.tcl
+# Log file: D:/facultate/An1Sem2/DSD/vivado_projects/Timer_v2/Timer_v2.runs/synth_1/Timer.vds
+# Journal file: D:/facultate/An1Sem2/DSD/vivado_projects/Timer_v2/Timer_v2.runs/synth_1\vivado.jou
+# Running On: DESKTOP-DQEUIAL, OS: Windows, CPU Frequency: 3294 MHz, CPU Physical cores: 12, Host memory: 6287 MB
+#-----------------------------------------------------------
+source Timer.tcl -notrace
+Command: read_checkpoint -auto_incremental -incremental D:/facultate/An1Sem2/DSD/vivado_projects/Timer_v2/Timer_v2.srcs/utils_1/imports/synth_1/Timer_Project.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from D:/facultate/An1Sem2/DSD/vivado_projects/Timer_v2/Timer_v2.srcs/utils_1/imports/synth_1/Timer_Project.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top Timer -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 22220
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [D:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1205.961 ; gain = 408.137
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'Timer' [D:/facultate/An1Sem2/DSD/vivado_projects/Timer_v2/Timer_v2.srcs/sources_1/new/Timer.vhd:12]
+INFO: [Synth 8-3491] module 'Debouncer' declared at 'D:/facultate/An1Sem2/DSD/vivado_projects/Timer_v2/Timer_v2.srcs/sources_1/new/Debouncer.vhd:4' bound to instance 'd1' of component 'Debouncer' [D:/facultate/An1Sem2/DSD/vivado_projects/Timer_v2/Timer_v2.srcs/sources_1/new/Timer.vhd:59]
+INFO: [Synth 8-638] synthesizing module 'Debouncer' [D:/facultate/An1Sem2/DSD/vivado_projects/Timer_v2/Timer_v2.srcs/sources_1/new/Debouncer.vhd:12]
+INFO: [Synth 8-256] done synthesizing module 'Debouncer' (0#1) [D:/facultate/An1Sem2/DSD/vivado_projects/Timer_v2/Timer_v2.srcs/sources_1/new/Debouncer.vhd:12]
+INFO: [Synth 8-3491] module 'Debouncer' declared at 'D:/facultate/An1Sem2/DSD/vivado_projects/Timer_v2/Timer_v2.srcs/sources_1/new/Debouncer.vhd:4' bound to instance 'd2' of component 'Debouncer' [D:/facultate/An1Sem2/DSD/vivado_projects/Timer_v2/Timer_v2.srcs/sources_1/new/Timer.vhd:60]
+INFO: [Synth 8-3491] module 'Debouncer' declared at 'D:/facultate/An1Sem2/DSD/vivado_projects/Timer_v2/Timer_v2.srcs/sources_1/new/Debouncer.vhd:4' bound to instance 'd3' of component 'Debouncer' [D:/facultate/An1Sem2/DSD/vivado_projects/Timer_v2/Timer_v2.srcs/sources_1/new/Timer.vhd:61]
+INFO: [Synth 8-3491] module 'FrequencyDivider' declared at 'D:/facultate/An1Sem2/DSD/vivado_projects/Timer_v2/Timer_v2.srcs/sources_1/new/FrequencyDivider.vhd:8' bound to instance 'f1' of component 'FrequencyDivider' [D:/facultate/An1Sem2/DSD/vivado_projects/Timer_v2/Timer_v2.srcs/sources_1/new/Timer.vhd:63]
+INFO: [Synth 8-638] synthesizing module 'FrequencyDivider' [D:/facultate/An1Sem2/DSD/vivado_projects/Timer_v2/Timer_v2.srcs/sources_1/new/FrequencyDivider.vhd:13]
+INFO: [Synth 8-256] done synthesizing module 'FrequencyDivider' (0#1) [D:/facultate/An1Sem2/DSD/vivado_projects/Timer_v2/Timer_v2.srcs/sources_1/new/FrequencyDivider.vhd:13]
+INFO: [Synth 8-3491] module 'Freq_Controller' declared at 'D:/facultate/An1Sem2/DSD/vivado_projects/Timer_v2/Timer_v2.srcs/sources_1/new/Freq_Controller.vhd:8' bound to instance 'f2' of component 'Freq_Controller' [D:/facultate/An1Sem2/DSD/vivado_projects/Timer_v2/Timer_v2.srcs/sources_1/new/Timer.vhd:64]
+INFO: [Synth 8-638] synthesizing module 'Freq_Controller' [D:/facultate/An1Sem2/DSD/vivado_projects/Timer_v2/Timer_v2.srcs/sources_1/new/Freq_Controller.vhd:13]
+INFO: [Synth 8-256] done synthesizing module 'Freq_Controller' (0#1) [D:/facultate/An1Sem2/DSD/vivado_projects/Timer_v2/Timer_v2.srcs/sources_1/new/Freq_Controller.vhd:13]
+INFO: [Synth 8-3491] module 'Controller' declared at 'D:/facultate/An1Sem2/DSD/vivado_projects/Timer_v2/Timer_v2.srcs/sources_1/new/Controller.vhd:9' bound to instance 'c1' of component 'Controller' [D:/facultate/An1Sem2/DSD/vivado_projects/Timer_v2/Timer_v2.srcs/sources_1/new/Timer.vhd:66]
+INFO: [Synth 8-638] synthesizing module 'Controller' [D:/facultate/An1Sem2/DSD/vivado_projects/Timer_v2/Timer_v2.srcs/sources_1/new/Controller.vhd:16]
+INFO: [Synth 8-256] done synthesizing module 'Controller' (0#1) [D:/facultate/An1Sem2/DSD/vivado_projects/Timer_v2/Timer_v2.srcs/sources_1/new/Controller.vhd:16]
+INFO: [Synth 8-3491] module 'Counters' declared at 'D:/facultate/An1Sem2/DSD/vivado_projects/Timer_v2/Timer_v2.srcs/sources_1/new/Counters.vhd:9' bound to instance 'c2' of component 'Counters' [D:/facultate/An1Sem2/DSD/vivado_projects/Timer_v2/Timer_v2.srcs/sources_1/new/Timer.vhd:70]
+INFO: [Synth 8-638] synthesizing module 'Counters' [D:/facultate/An1Sem2/DSD/vivado_projects/Timer_v2/Timer_v2.srcs/sources_1/new/Counters.vhd:16]
+INFO: [Synth 8-3491] module 'Counter_S0' declared at 'D:/facultate/An1Sem2/DSD/vivado_projects/Timer_v2/Timer_v2.srcs/sources_1/new/Counter_S0.vhd:9' bound to instance 'C1' of component 'Counter_S0' [D:/facultate/An1Sem2/DSD/vivado_projects/Timer_v2/Timer_v2.srcs/sources_1/new/Counters.vhd:50]
+INFO: [Synth 8-638] synthesizing module 'Counter_S0' [D:/facultate/An1Sem2/DSD/vivado_projects/Timer_v2/Timer_v2.srcs/sources_1/new/Counter_S0.vhd:15]
+INFO: [Synth 8-256] done synthesizing module 'Counter_S0' (0#1) [D:/facultate/An1Sem2/DSD/vivado_projects/Timer_v2/Timer_v2.srcs/sources_1/new/Counter_S0.vhd:15]
+INFO: [Synth 8-3491] module 'Counter_S1' declared at 'D:/facultate/An1Sem2/DSD/vivado_projects/Timer_v2/Timer_v2.srcs/sources_1/new/Counter_S1.vhd:9' bound to instance 'C2' of component 'Counter_S1' [D:/facultate/An1Sem2/DSD/vivado_projects/Timer_v2/Timer_v2.srcs/sources_1/new/Counters.vhd:54]
+INFO: [Synth 8-638] synthesizing module 'Counter_S1' [D:/facultate/An1Sem2/DSD/vivado_projects/Timer_v2/Timer_v2.srcs/sources_1/new/Counter_S1.vhd:15]
+INFO: [Synth 8-256] done synthesizing module 'Counter_S1' (0#1) [D:/facultate/An1Sem2/DSD/vivado_projects/Timer_v2/Timer_v2.srcs/sources_1/new/Counter_S1.vhd:15]
+INFO: [Synth 8-3491] module 'Counter_M0' declared at 'D:/facultate/An1Sem2/DSD/vivado_projects/Timer_v2/Timer_v2.srcs/sources_1/new/Counter_M0.vhd:9' bound to instance 'C3' of component 'Counter_M0' [D:/facultate/An1Sem2/DSD/vivado_projects/Timer_v2/Timer_v2.srcs/sources_1/new/Counters.vhd:60]
+INFO: [Synth 8-638] synthesizing module 'Counter_M0' [D:/facultate/An1Sem2/DSD/vivado_projects/Timer_v2/Timer_v2.srcs/sources_1/new/Counter_M0.vhd:15]
+INFO: [Synth 8-256] done synthesizing module 'Counter_M0' (0#1) [D:/facultate/An1Sem2/DSD/vivado_projects/Timer_v2/Timer_v2.srcs/sources_1/new/Counter_M0.vhd:15]
+INFO: [Synth 8-3491] module 'Counter_M1' declared at 'D:/facultate/An1Sem2/DSD/vivado_projects/Timer_v2/Timer_v2.srcs/sources_1/new/Counter_M1.vhd:9' bound to instance 'C4' of component 'Counter_M1' [D:/facultate/An1Sem2/DSD/vivado_projects/Timer_v2/Timer_v2.srcs/sources_1/new/Counters.vhd:66]
+INFO: [Synth 8-638] synthesizing module 'Counter_M1' [D:/facultate/An1Sem2/DSD/vivado_projects/Timer_v2/Timer_v2.srcs/sources_1/new/Counter_M1.vhd:15]
+INFO: [Synth 8-256] done synthesizing module 'Counter_M1' (0#1) [D:/facultate/An1Sem2/DSD/vivado_projects/Timer_v2/Timer_v2.srcs/sources_1/new/Counter_M1.vhd:15]
+INFO: [Synth 8-256] done synthesizing module 'Counters' (0#1) [D:/facultate/An1Sem2/DSD/vivado_projects/Timer_v2/Timer_v2.srcs/sources_1/new/Counters.vhd:16]
+INFO: [Synth 8-3491] module 'Display_v2' declared at 'D:/facultate/An1Sem2/DSD/vivado_projects/Timer_v2/Timer_v2.srcs/sources_1/new/Display_v2.vhd:8' bound to instance 'c3' of component 'Display_v2' [D:/facultate/An1Sem2/DSD/vivado_projects/Timer_v2/Timer_v2.srcs/sources_1/new/Timer.vhd:73]
+INFO: [Synth 8-638] synthesizing module 'Display_v2' [D:/facultate/An1Sem2/DSD/vivado_projects/Timer_v2/Timer_v2.srcs/sources_1/new/Display_v2.vhd:15]
+INFO: [Synth 8-256] done synthesizing module 'Display_v2' (0#1) [D:/facultate/An1Sem2/DSD/vivado_projects/Timer_v2/Timer_v2.srcs/sources_1/new/Display_v2.vhd:15]
+INFO: [Synth 8-256] done synthesizing module 'Timer' (0#1) [D:/facultate/An1Sem2/DSD/vivado_projects/Timer_v2/Timer_v2.srcs/sources_1/new/Timer.vhd:12]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1298.332 ; gain = 500.508
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1298.332 ; gain = 500.508
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1298.332 ; gain = 500.508
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1298.332 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [D:/facultate/An1Sem2/DSD/vivado_projects/Timer_v2/Timer_v2.srcs/constrs_1/new/board.xdc]
+Finished Parsing XDC File [D:/facultate/An1Sem2/DSD/vivado_projects/Timer_v2/Timer_v2.srcs/constrs_1/new/board.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/facultate/An1Sem2/DSD/vivado_projects/Timer_v2/Timer_v2.srcs/constrs_1/new/board.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Timer_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/Timer_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1399.582 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1399.582 ; gain = 0.000
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [D:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1399.582 ; gain = 601.758
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1399.582 ; gain = 601.758
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1399.582 ; gain = 601.758
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'curr_st_reg' in module 'Controller'
+WARNING: [Synth 8-327] inferring latch for variable 'FSM_sequential_next_st_reg' [D:/facultate/An1Sem2/DSD/vivado_projects/Timer_v2/Timer_v2.srcs/sources_1/new/Controller.vhd:29]
+WARNING: [Synth 8-327] inferring latch for variable 'FSM_onehot_next_st_reg' [D:/facultate/An1Sem2/DSD/vivado_projects/Timer_v2/Timer_v2.srcs/sources_1/new/Controller.vhd:29]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                              000 |                              000
+                count_up |                              001 |                              001
+                    hold |                              010 |                              010
+               increment |                              011 |                              011
+              count_down |                              100 |                              100
+                   alarm |                              101 |                              101
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'curr_st_reg' using encoding 'sequential' in module 'Controller'
+WARNING: [Synth 8-327] inferring latch for variable 'FSM_sequential_next_st_reg' [D:/facultate/An1Sem2/DSD/vivado_projects/Timer_v2/Timer_v2.srcs/sources_1/new/Controller.vhd:29]
+WARNING: [Synth 8-327] inferring latch for variable 'incr_s_reg' [D:/facultate/An1Sem2/DSD/vivado_projects/Timer_v2/Timer_v2.srcs/sources_1/new/Controller.vhd:85]
+WARNING: [Synth 8-327] inferring latch for variable 'incr_m_reg' [D:/facultate/An1Sem2/DSD/vivado_projects/Timer_v2/Timer_v2.srcs/sources_1/new/Controller.vhd:87]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 1399.582 ; gain = 601.758
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   32 Bit       Adders := 2     
+	   2 Input    4 Bit       Adders := 8     
++---Registers : 
+	               32 Bit    Registers := 2     
+	                4 Bit    Registers := 4     
+	                1 Bit    Registers := 11    
++---Muxes : 
+	   4 Input    8 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 16    
+	   4 Input    4 Bit        Muxes := 1     
+	   6 Input    3 Bit        Muxes := 2     
+	   2 Input    3 Bit        Muxes := 13    
+	   2 Input    1 Bit        Muxes := 25    
+	   6 Input    1 Bit        Muxes := 10    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-3917] design Timer has port anodes[7] driven by constant 1
+WARNING: [Synth 8-3917] design Timer has port anodes[6] driven by constant 1
+WARNING: [Synth 8-3917] design Timer has port anodes[5] driven by constant 1
+WARNING: [Synth 8-3917] design Timer has port anodes[4] driven by constant 1
+WARNING: [Synth 8-3332] Sequential element (c1/FSM_sequential_next_st_reg[2]) is unused and will be removed from module Timer.
+WARNING: [Synth 8-3332] Sequential element (c1/FSM_sequential_next_st_reg[1]) is unused and will be removed from module Timer.
+WARNING: [Synth 8-3332] Sequential element (c1/FSM_sequential_next_st_reg[0]) is unused and will be removed from module Timer.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 1399.582 ; gain = 601.758
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 1399.582 ; gain = 601.758
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 1399.582 ; gain = 601.758
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 1399.582 ; gain = 601.758
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 1399.582 ; gain = 601.758
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 1399.582 ; gain = 601.758
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 1399.582 ; gain = 601.758
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 1399.582 ; gain = 601.758
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 1399.582 ; gain = 601.758
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 1399.582 ; gain = 601.758
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |    20|
+|3     |LUT1   |     7|
+|4     |LUT2   |     8|
+|5     |LUT3   |     8|
+|6     |LUT4   |    17|
+|7     |LUT5   |    14|
+|8     |LUT6   |    38|
+|9     |FDCE   |    19|
+|10    |FDRE   |    89|
+|11    |FDSE   |     2|
+|12    |LD     |     2|
+|13    |IBUF   |     4|
+|14    |OBUF   |    16|
++------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 1399.582 ; gain = 601.758
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 13 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:15 ; elapsed = 00:00:22 . Memory (MB): peak = 1399.582 ; gain = 500.508
+Synthesis Optimization Complete : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 1399.582 ; gain = 601.758
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1399.582 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 22 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1399.582 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 2 instances were transformed.
+  LD => LDCE: 2 instances
+
+Synth Design complete, checksum: bae932d
+INFO: [Common 17-83] Releasing license: Synthesis
+59 Infos, 13 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 1399.582 ; gain = 996.422
+INFO: [Common 17-1381] The checkpoint 'D:/facultate/An1Sem2/DSD/vivado_projects/Timer_v2/Timer_v2.runs/synth_1/Timer.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file Timer_utilization_synth.rpt -pb Timer_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu May 25 13:05:11 2023...
